@@ -11,7 +11,8 @@
     "require-jsdoc": "off",
     "linebreak-style": "off",
     "indent": "off",
-    "curly": "off"
+    "curly": "off",
+    "eol-last": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
