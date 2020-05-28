@@ -52,7 +52,7 @@ module.exports= {
       filename: filename('css')
     }),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV':JSON.stringify(process.env.NODE_ENV)
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ],
   module: {
@@ -74,15 +74,7 @@ module.exports= {
       {
         test: /\.js$/,
         exclude: [path.resolve(__dirname, 'node_modules')],
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-class-properties']
-            }
-          }
-        ]
+        use: ['babel-loader']
       }
     ]
   }
