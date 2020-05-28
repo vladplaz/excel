@@ -127,7 +127,7 @@ export function $(selector) {
 
 $.create = (tagName, classes = '') => {
   const el = document.createElement(tagName)
-  if (classes) {
+  if(classes) {
     el.classList.add(classes)
   }
   return $(el)
